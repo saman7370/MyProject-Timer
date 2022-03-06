@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { TimerContext } from "./context";
 import TimeList from "./TimeList";
 var interval;
 
@@ -14,6 +15,8 @@ class Timer extends Component{
             isfalse : false
         }
     }
+
+static contextType = TimerContext;
 
 StartTimer =()=>{
     if(this.state.isfalse === false){
@@ -68,7 +71,7 @@ componentDidMount(){
 
 handleSetAddTimer = ()=>{
     let NewTimer = document.querySelector('.timer').innerHTML
-    this.props.setTime([...this.props.time , NewTimer])         
+    this.context.setTime([...this.context.time , NewTimer])         
 }
 
 
@@ -85,11 +88,10 @@ handleSetAddTimer = ()=>{
                <button onClick = {this.StartTimer} className = "btn-start">شروع</button>
                <button onClick = {this.StopTimer} className = "btn-stop">توقف</button>
                <button onClick = {this.ResetTimer} className = "btn-reset">شروع دوباره</button>
-               <button onClick = {this.props.handleSetTitle} className = "btn-guide">راهنما</button> 
+               <button onClick = {this.props.handleSetTitle} className = "btn-guide">راهنما</button>
+               <button onClick = {this.props.handleBackTitle} className = "btn-back">برگشت</button> 
             </div>
-            <TimeList>
-                {this.props.time}
-            </TimeList>
+            
             
             </>
             

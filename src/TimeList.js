@@ -1,6 +1,8 @@
 // import { Component } from "react";
 import './style.css';
 import Item from "./Item";
+import { TimerContext } from './context';
+import { useContext } from 'react';
 
 
 
@@ -15,9 +17,10 @@ import Item from "./Item";
 // }
 
 const TimeList = (props)=>{
+    const context = useContext(TimerContext);
     return(
         <div className = "time-list">
-            {props.children.map((c)=>(
+            {context.time.map((c)=>(
                 <Item key={Math.random()}>{c}</Item>
             ))}
         </div>

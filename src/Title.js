@@ -1,5 +1,11 @@
 // import { Component } from "react";
 
+import { useContext } from "react";
+import { TimerContext } from "./context";
+
+
+
+
 
 // class Title extends Component{
 //     render(){
@@ -12,9 +18,11 @@
 // }
 
 const Title = (props)=>{
+   const context = useContext(TimerContext);
+
     return(
         <div className = "head">
-            {props.children}
+            {context.head}
         </div>
     )
 }

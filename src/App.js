@@ -2,6 +2,8 @@ import {useState } from "react";
 import './style.css';
 import Title from "./Title";
 import Timer from "./Timer";
+import TimeList from "./TimeList";
+import { TimerContext } from "./context";
 // import TimeList from "./TimeList";
 
 
@@ -38,15 +40,24 @@ const App = ()=>{
 
     const handleSetTitle = ()=>{
         setHead("با زدن روی خود تایمر تایم مورد نظر چاپ میشود و با کلیک بر روی تایم مورد نظر آن تایم حذف میشود")
-    } 
+    }
+    
+    const handleBackTitle = ()=>{
+        setHead("سلام به پروژه تایمر من خوش آمدید")
+    }
 
-    return(
-        <div className = "main">
-            <Title>
-                {head}
-            </Title>
-            <Timer time = {time} setTime = {setTime} handleSetTitle = {handleSetTitle}/>
-        </div>
+return(
+    <div className = "main">
+        <TimerContext.Provider value ={{
+            head,
+            time,
+            setTime,
+        }}>
+            <Title head = {head}/>
+            <Timer handleSetTitle = {handleSetTitle} handleBackTitle = {handleBackTitle}/>
+            <TimeList time = {time} setTime = {setTime}/>
+        </TimerContext.Provider>
+    </div>
     )
 }
 
