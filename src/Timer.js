@@ -16,7 +16,7 @@ class Timer extends Component{
     }
 
 StartTimer =()=>{
-    if(this.state.isfalse == false){
+    if(this.state.isfalse === false){
         this.setState({
             isfalse : true
         })   
@@ -26,13 +26,13 @@ StartTimer =()=>{
         this.setState({
             second : this.state.second + 1
         })
-        if(this.state.second == 60){
+        if(this.state.second === 60){
             this.setState({
                 second : 0,
                 minute : this.state.minute + 1
             })
         }
-        if(this.state.minute == 60){
+        if(this.state.minute === 60){
             this.setState({
                 minute : 0,
                 hour : this.state.hour + 1
@@ -44,7 +44,7 @@ StartTimer =()=>{
 }
 
 StopTimer = ()=>{
-    if(this.state.isfalse == true){
+    if(this.state.isfalse === true){
        this.setState({
            isfalse : false
     })
@@ -67,14 +67,8 @@ componentDidMount(){
 }
 
 handleSetAddTimer = ()=>{
-    let h = this.state.hour;
-    let m= this.state.minute;
-    let s = this.state.second;
-    let NewTimer = `${h > 9 ? h : "0"+h } : ${m >9 ? m : "0"+m } : ${s > 9 ? s : "0"+s }` 
-    this.props.setStateTime({
-        NewTimer
-    })
-          
+    let NewTimer = document.querySelector('.timer').innerHTML
+    this.props.setTime([...this.props.time , NewTimer])         
 }
 
 
@@ -93,7 +87,10 @@ handleSetAddTimer = ()=>{
                <button onClick = {this.ResetTimer} className = "btn-reset">شروع دوباره</button>
                <button onClick = {this.props.handleSetTitle} className = "btn-guide">راهنما</button> 
             </div>
-            <TimeList time = {this.props.time}/>
+            <TimeList>
+                {this.props.time}
+            </TimeList>
+            
             </>
             
         )

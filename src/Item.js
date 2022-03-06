@@ -1,4 +1,4 @@
-// import { Component } from "react";
+//   import { Component } from "react";
 
 
 // class Item extends Component{
@@ -11,4 +11,12 @@
 //     }
 // }
 
-// export default Item;
+const Item = (props)=>{
+    return(
+        <div className = "item">
+            {props.children}
+        </div>
+    )
+}
+
+export default Item;
