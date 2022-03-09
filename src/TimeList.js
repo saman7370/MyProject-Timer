@@ -1,5 +1,6 @@
 // import { Component } from "react";
 import './style.css';
+import './responsive.css';
 import Item from "./Item";
 import { TimerContext } from './context';
 import { useContext } from 'react';

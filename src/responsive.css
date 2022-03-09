@@ -1,0 +1,572 @@
+@media screen and ( max-width : 990px) {
+
+    .head{
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        position: absolute;
+        top: 17%;}
+    
+    .timer{
+        width: 400px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255 , 0.5);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0 ,0.5);
+        position: absolute;
+        top: 28%;
+        cursor: pointer;
+        direction: ltr;
+        font-size: 25px;
+        word-spacing: 12px;
+        font-weight: 999;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;}
+    
+    .timer:hover{
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.5);}
+    
+    .btn-box{
+         width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 45%;}
+    
+    .btn-start{
+        background-color: green;
+        width: 85px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 16px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(0, 63, 0, 0.5);
+        color: #fff;}
+    
+    .btn-stop{
+        background-color: #c00;
+        width: 85px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 16px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(97, 1, 1, 0.5);
+        color: #fff;}
+    
+    .btn-reset{
+        background-color:teal;
+        width: 85px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgb(1, 61, 61,0.5);
+        color: #fff;}
+    
+    .btn-guide{
+       background-color: rgb(99, 98, 98);
+        width: 85px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 16px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;}
+    
+    .btn-back{
+       background-color:chocolate;
+        width: 85px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 16px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;}
+    
+    .btn-start:hover{
+        box-shadow: 2px 2px 20px rgba(0,63,0,0.5);}
+    
+    .btn-stop:hover{
+        box-shadow: 2px 2px 20px rgba(97,1,1,0.5);}
+    
+    .btn-reset:hover{
+        box-shadow: 2px 2px 20px rgba(1,61,61,0.5);}
+    
+    .btn-guide:hover{
+        box-shadow: 2px 2px 20px rgba(59,59,59,0.5);}
+    
+    .btn-back:hover{
+        box-shadow: 2px 2px 20px rgba(119, 59, 16,0.5);}
+    
+    .time-list{
+        position: absolute;
+        top: 60%;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;  
+        color: #c00;
+        cursor: pointer;
+        direction: ltr;}
+    
+    .item:hover{
+        box-shadow: 1px 1px 10px rgba(90, 1, 1 , 0.5);
+        border-radius: 5px;
+        padding: 10px;}  
+}
+
+@media screen and (max-width : 650px) {
+
+    .head{
+        font-size: 17px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        position: absolute;
+        top: 17%;}
+    
+    .timer{
+        width: 300px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255 , 0.5);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0 ,0.5);
+        position: absolute;
+        top: 25%;
+        cursor: pointer;
+        direction: ltr;
+        font-size: 20px;
+        word-spacing: 12px;
+        font-weight: 999;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;}
+    
+    .timer:hover{
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.5);}
+    
+    .btn-box{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 40%;}
+    
+    .btn-start{
+        background-color: green;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(0, 63, 0, 0.5);
+        color: #fff;}
+    
+    .btn-stop{
+        background-color: #c00;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(97, 1, 1, 0.5);
+        color: #fff;}
+    
+    .btn-reset{
+        background-color:teal;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 12px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgb(1, 61, 61,0.5);
+        color: #fff;}
+    
+    .btn-guide{
+       background-color: rgb(99, 98, 98);
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;}
+    
+    .btn-back{
+       background-color:chocolate;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;}
+    
+    .btn-start:hover{
+        box-shadow: 2px 2px 20px rgba(0,63,0,0.5);}
+    
+    .btn-stop:hover{
+        box-shadow: 2px 2px 20px rgba(97,1,1,0.5);}
+    
+    .btn-reset:hover{
+        box-shadow: 2px 2px 20px rgba(1,61,61,0.5);}
+    
+    .btn-guide:hover{
+        box-shadow: 2px 2px 20px rgba(59,59,59,0.5);}
+    
+    .btn-back:hover{
+        box-shadow: 2px 2px 20px rgba(119, 59, 16,0.5);}
+    
+    .time-list{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;  
+        color: #c00;
+        cursor: pointer;
+        direction: ltr;}
+    
+    .item:hover{
+        box-shadow: 1px 1px 10px rgba(90, 1, 1 , 0.5);
+        border-radius: 5px;
+        padding: 10px;}   
+}
+
+@media screen and (max-width : 420px) {
+
+    .head{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        position: absolute;
+        top: 17%;}
+    
+    .timer{
+        width: 200px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255 , 0.5);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0 ,0.5);
+        position: absolute;
+        top: 23%;
+        cursor: pointer;
+        direction: ltr;
+        font-size: 18px;
+        word-spacing: 12px;
+        font-weight: 999;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;}
+    
+    .timer:hover{
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.5);}
+    
+    .btn-box{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 35%;}
+    
+    .btn-start{
+        background-color: green;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 13px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(0, 63, 0, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-stop{
+        background-color: #c00;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(97, 1, 1, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-reset{
+        background-color:teal;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 12px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgb(1, 61, 61,0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-guide{
+       background-color: rgb(99, 98, 98);
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-back{
+       background-color:chocolate;
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-start:hover{
+        box-shadow: 2px 2px 20px rgba(0,63,0,0.5);}
+    
+    .btn-stop:hover{
+        box-shadow: 2px 2px 20px rgba(97,1,1,0.5);}
+    
+    .btn-reset:hover{
+        box-shadow: 2px 2px 20px rgba(1,61,61,0.5);}
+    
+    .btn-guide:hover{
+        box-shadow: 2px 2px 20px rgba(59,59,59,0.5);}
+    
+    .btn-back:hover{
+        box-shadow: 2px 2px 20px rgba(119, 59, 16,0.5);}
+    
+    .time-list{
+        position: absolute;
+        top: 72%;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;  
+        color: #c00;
+        cursor: pointer;
+        direction: ltr;}
+    
+    .item:hover{
+        box-shadow: 1px 1px 10px rgba(90, 1, 1 , 0.5);
+        border-radius: 5px;
+        padding: 10px;}   
+}
+
+@media screen and (max-width : 320px) {
+
+    .head{
+        text-align: center;
+        font-size: 12px;
+        font-weight: 900;
+        position: absolute;
+        top: 17%;}
+    
+    .timer{
+        width: 150px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255 , 0.5);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0 ,0.5);
+        position: absolute;
+        top: 23%;
+        cursor: pointer;
+        direction: ltr;
+        font-size: 14px;
+        word-spacing: 12px;
+        font-weight: 999;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;}
+    
+    .timer:hover{
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.5);}
+    
+    .btn-box{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 35%;}
+    
+    .btn-start{
+        background-color: green;
+        width: 55px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 13px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(0, 63, 0, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-stop{
+        background-color: #c00;
+        width: 55px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 13px;
+        font-weight: 900;
+        box-shadow: 1px 1px 10px rgb(97, 1, 1, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-reset{
+        background-color:teal;
+        width: 55px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 12px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgb(1, 61, 61,0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-guide{
+       background-color: rgb(99, 98, 98);
+        width: 55px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 13px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-back{
+       background-color:chocolate;
+        width: 55px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: vazir;
+        font-size: 13px;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px rgba(59, 59, 59, 0.5);
+        color: #fff;
+        margin: 10px;}
+    
+    .btn-start:hover{
+        box-shadow: 2px 2px 20px rgba(0,63,0,0.5);}
+    
+    .btn-stop:hover{
+        box-shadow: 2px 2px 20px rgba(97,1,1,0.5);}
+    
+    .btn-reset:hover{
+        box-shadow: 2px 2px 20px rgba(1,61,61,0.5);}
+    
+    .btn-guide:hover{
+        box-shadow: 2px 2px 20px rgba(59,59,59,0.5);}
+    
+    .btn-back:hover{
+        box-shadow: 2px 2px 20px rgba(119, 59, 16,0.5);}
+    
+    .time-list{
+        position: absolute;
+        top: 72%;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;  
+        color: #c00;
+        cursor: pointer;
+        direction: ltr;}
+    
+    .item:hover{
+        box-shadow: 1px 1px 10px rgba(90, 1, 1 , 0.5);
+        border-radius: 5px;
+        padding: 10px;} 
+}
+

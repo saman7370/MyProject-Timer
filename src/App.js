@@ -1,5 +1,6 @@
 import {useState } from "react";
 import './style.css';
+import './responsive.css';
 import Title from "./Title";
 import Timer from "./Timer";
 import TimeList from "./TimeList";
@@ -39,7 +40,7 @@ const App = ()=>{
     const[time , setTime] = useState([])
 
     const handleSetTitle = ()=>{
-        setHead("با زدن روی خود تایمر تایم مورد نظر چاپ میشود و با کلیک بر روی تایم مورد نظر آن تایم حذف میشود")
+        setHead("با زدن روی خود تایمر تایم مورد نظر چاپ میشود")
     }
     
     const handleBackTitle = ()=>{
